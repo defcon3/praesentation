@@ -20,7 +20,7 @@ Public Class HtmlTable
     End Function
 
     Public Sub SaveToFile(fileName As String)
-        Dim filePath As String = Path.Combine("C:\Users\VLU\Desktop\report", fileName)
+        Dim filePath As String = Path.Combine("C:\Temp\report", fileName)
         Using writer As New StreamWriter(filePath)
             writer.Write(ToHtml())
         End Using
