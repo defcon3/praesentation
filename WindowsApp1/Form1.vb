@@ -3,11 +3,16 @@
 
 
         'Dim table1 As New HtmlTable(1, "<tr><th width=""2%"" align=""left"" bgcolor=""blue"" color=""white"">Nr:</th><th width=""5%"" align=""left"">1</th><th width=""13%"" align=""left"">Strecke:</th><th width=""80%"" align=""left"">Dannenberg-Lüchow</th></tr>")
-        Dim table2 As New HtmlTable(2, "<tr><th width=""20%"" align=""left"" bgcolor=""white"" color=""gray"">Verkehrspotenzial</th><th width=""80%"" align=""left"">______________________________________________________________________________________________________</th></tr>")
+        'Dim table2 As New HtmlTable(2, "<tr><th width=""20%"" align=""left"" bgcolor=""white"" color=""gray"">Verkehrspotenzial</th><th width=""80%"" align=""left"">______________________________________________________________________________________________________</th></tr>")
 
-        Dim tab1 As New clsTab1(1) With {.nummer = 909, .strecke = "Trakehnerweg"}
+
+
+
+        Dim tab1 As New clsTab1(1) With {.nummer = 949, .strecke = "Trakehnerweg"}
         Dim tab2 As New clstab2(2)
-        Dim tab3 As New clstab2(3)
+        Dim tab3 As New clstab3(3)
+
+        Dim tab5 As New clstab2(5)
 
 
 
@@ -67,7 +72,7 @@
         'table1.AddRow(row1)
 
         Dim row2 As New HtmlTableRow()
-        row2.AddCell(New HtmlTableCell("Max Mustermann"))
+        row2.AddCell(New HtmlTableCell("Max Musterman5n"))
         row2.AddCell(New HtmlTableCell("35"))
         row2.AddCell(New HtmlTableCell("Berlin"))
         'table1.AddRow(row2)
@@ -81,12 +86,14 @@
         row4.AddCell(New HtmlTableCell("Berlin"))
         'table1.AddRow(row4)
 
-        Dim htmlString As String = tab1.ToString
-        htmlString.Append(table2.ToHtml)
+        'Dim htmlString As String = tab1.ToString
+        'htmlString.Append(table2.ToHtml)
 
         'Console.WriteLine(htmlString)
 
-        tab1.anhang = tab1.ToString & tab2.ToString & tab3.ToString
+
+        ' Zusammenkleben
+        tab1.anhang = tab1.ToString & tab2.ToString & tab5.ToString
 
 
         tab1.SaveToFile("table.html")

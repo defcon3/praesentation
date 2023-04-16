@@ -1,4 +1,4 @@
-﻿Public Class clstab2
+﻿Public Class clsTab2
     Inherits HtmlTable
 
     Private tab As HtmlTable
