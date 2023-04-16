@@ -93,7 +93,7 @@
 
 
         ' Zusammenkleben
-        tab1.anhang = tab1.ToString & tab2.ToString & tab5.ToString
+        tab1.anhang = tab1.ToString & tab2.ToString & tab3.ToString & tab5.ToString
 
 
         tab1.SaveToFile("table.html")

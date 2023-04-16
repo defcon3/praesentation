@@ -7,12 +7,16 @@
         If hf IsNot Nothing Then hintergrundfarbe = hf
         If vf IsNot Nothing Then vordergrundfarbe = vf
 
-        _text = text
+
+
+
+        _text = "<font color=""" & ColorTranslator.ToHtml(vordergrundfarbe) & """>" & text & "</font>"
     End Sub
 
 
 
     Public Function ToHtml() As String
+
         Return "<td bgcolor=""" & ColorTranslator.ToHtml(hintergrundfarbe) & """>" & _text & "</td>"
     End Function
 End Class
