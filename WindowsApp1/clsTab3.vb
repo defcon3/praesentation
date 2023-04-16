@@ -1,3 +1,5 @@
+﻿Imports Microsoft.VisualBasic
+
 Public Class clsTab3
     Inherits HtmlTable
 
