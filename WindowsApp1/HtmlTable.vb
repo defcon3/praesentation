@@ -30,6 +30,8 @@ Public Class HtmlTable
                 tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: gray;"">")
             Case 3
                 tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%;"">")
+            Case 4
+                tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%;"">")
             Case Else
                 tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: gray;"">")
         End Select

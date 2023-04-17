@@ -10,7 +10,8 @@
 
         Dim tab1 As New clsTab1(1) With {.nummer = 949, .strecke = "Trakehnerweg"}
         Dim tab2 As New clstab2(2)
-        Dim tab3 As New clstab3(3)
+        Dim tab3 As New clsTab3(3)
+        Dim tab4 As New clsTab4(4)
 
         Dim tab5 As New clstab2(5)
 
@@ -93,7 +94,7 @@
 
 
         ' Zusammenkleben
-        tab1.anhang = tab1.ToString & tab2.ToString & tab3.ToString & tab5.ToString
+        tab1.anhang = tab1.ToString & tab2.ToString & tab3.ToString & tab4.ToString & tab5.ToString
 
 
         tab1.SaveToFile("table.html")
