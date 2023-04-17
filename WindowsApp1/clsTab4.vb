@@ -39,13 +39,12 @@
     Private Function formatGrafik(ByVal dt As DataTable) As String
 
         Dim t As String
-        t="<svg xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" version=""1.1"" width=""640"" height=""480"" viewBox=""0 0 640 480"" xml:space=""preserve""><desc>Created with Fabric.js 3.6.6</desc>
+        t = "<svg xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" version=""1.1"" width=""320"" height=""240"" viewBox=""0 0 320 240"" xml:space=""preserve""><desc>Created with Fabric.js 3.6.6</desc>
 <defs>
 </defs>
-<rect x="0" y="0" width="50" height="50" fill="blue" />
-<g transform=""matrix(3 0 0 2.17 317.75 280)""  >
-<polygon style=""stroke: rgb(162,156,156); stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(193,193,190); fill-opacity: 0.22; fill-rule: nonzero; opacity: 1;"" vector-effect=""non-scaling-stroke""  points=""-50,-50 -50,50 50,50 50,-50 "" />
-</g>
+<rect x=""0"" y=""0"" width=""320"" height=""240"" fill=""none"" stroke=""black"" stroke-width=""10""  />
+<line x1=""160"" y1=""20"" x2=""160"" y2=""220"" style=""stroke: black; stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" /><!--
+<!--
 <g transform=""matrix(1.37 0 0 1.37 212.01 265.99)""  >
 <line style=""stroke: rgb(0,0,0); stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" vector-effect=""non-scaling-stroke""  x1=""1"" y1=""-67"" x2=""-1"" y2=""67"" />
 </g>
@@ -127,8 +126,8 @@
 </g>
 <g transform=""matrix(1 0 0 1 390.81 298.67)"" style=""""  >
 		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-28.31"" y=""5.65"" >g)hoch</tspan></text>
-</g>
-</svg>"""
+</g>-->
+</svg>"
 
 
         Return t
