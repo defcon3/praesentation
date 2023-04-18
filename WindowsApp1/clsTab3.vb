@@ -78,13 +78,13 @@
         Dim rr As DataRow
 
         For Each rw In dt.Rows
-            row.AddCell(New HtmlTableCell(rw(1).ToString))
-            row.AddCell(New HtmlTableCell(rw(2).ToString))
-            row.AddCell(New HtmlTableCell(rw(3).ToString))
-            row.AddCell(New HtmlTableCell(rw(4).ToString))
-            row.AddCell(New HtmlTableCell(rw(5).ToString))
-            row.AddCell(New HtmlTableCell(rw(6).ToString))
-            row.AddCell(New HtmlTableCell(rw(0).ToString, , Color.White))
+            row.AddCell(New HtmlTableCell(rw(1).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(2).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(3).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(4).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(5).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(6).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
+            'row.AddCell(New HtmlTableCell(rw(0).ToString, , Color.White))
             innertab.AddRow(row)
             row = New HtmlTableRow
         Next

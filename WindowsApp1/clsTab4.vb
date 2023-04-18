@@ -43,29 +43,20 @@
 <defs>
 </defs>
 <rect x=""0"" y=""0"" width=""320"" height=""240"" fill=""none"" stroke=""black"" stroke-width=""10""  />
-<line x1=""160"" y1=""20"" x2=""160"" y2=""220"" style=""stroke: black; stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" /><!--
+<line x1=""160"" y1=""20"" x2=""160"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
+<line x1=""60"" y1=""20"" x2=""60"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
+<line x1=""110"" y1=""20"" x2=""110"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
+<line x1=""260"" y1=""20"" x2=""260"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
+<line x1=""210"" y1=""20"" x2=""210"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
+<line x1=""60"" y1=""20"" x2=""260"" y2=""20"" style=""stroke: grey; stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
+		<text x=""10"" y=""10"" xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-24"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">a) 0</tspan></text>
 <!--
-<g transform=""matrix(1.37 0 0 1.37 212.01 265.99)""  >
-<line style=""stroke: rgb(0,0,0); stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" vector-effect=""non-scaling-stroke""  x1=""1"" y1=""-67"" x2=""-1"" y2=""67"" />
-</g>
-<g transform=""matrix(1 0 0 1 285.5 284)""  >
-<line style=""stroke: rgb(0,0,0); stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" vector-effect=""non-scaling-stroke""  x1=""0"" y1=""0"" x2=""0"" y2=""0"" />
-</g>
-<g transform=""matrix(1.37 0 0 1.37 249.06 272.48)""  >
-<line style=""stroke: rgb(0,0,0); stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" vector-effect=""non-scaling-stroke""  x1=""1"" y1=""-67"" x2=""-1"" y2=""67"" />
-</g>
-<g transform=""matrix(1.37 0 0 1.37 288.06 270.48)""  >
-<line style=""stroke: rgb(0,0,0); stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" vector-effect=""non-scaling-stroke""  x1=""1"" y1=""-67"" x2=""-1"" y2=""67"" />
-</g>
-<g transform=""matrix(1.37 0 0 1.37 342.06 278.48)""  >
-<line style=""stroke: rgb(0,0,0); stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" vector-effect=""non-scaling-stroke""  x1=""1"" y1=""-67"" x2=""-1"" y2=""67"" />
-</g>
-<g transform=""matrix(1.37 0 0 1.37 391.06 270.48)""  >
-<line style=""stroke: rgb(0,0,0); stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" vector-effect=""non-scaling-stroke""  x1=""1"" y1=""-67"" x2=""-1"" y2=""67"" />
-</g>
 <g transform=""matrix(1 0 0 1 203 189.67)"" style=""""  >
 		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-24"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">a) 0</tspan></text>
-</g>
+</g>-->
+<text text-anchor=""end"">
+  <tspan y=""15"" x=""78"">733 KB</tspan>
+</text><!--
 <g transform=""matrix(1.15 0 0 1.08 443.25 186.51)"" style=""""  >
 		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-33.59"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">b) 2000</tspan></text>
 </g>
