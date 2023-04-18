@@ -5,6 +5,10 @@
     Public nummer As Int16 = 1
     Public strecke As String = ""
 
+    Public dreieck1, dreieck2, dreieck3, dreieck4 As Decimal
+
+
+
     Public Sub New(ByVal nr As Integer, Optional ByVal breiten As String = "")
         MyBase.New(nr, breiten)
         nummer = nr
@@ -14,7 +18,7 @@
     Public Overrides Function ToString() As String
 
         'tab = New HtmlTable(4, "<tr><th width=""60%"" align=""left"" bgcolor=""white"" color=""black"">asdf</th><th width=""40%"" align=""left"">vdxd</th></tr>")
-        tab = New HtmlTable(4, "<tr><td width=""60%"" align=""left"" bgcolor=""white"" color=""black"">Einwohner im 3,0 EZB je km Streckenlänge:</td><td width=""40%"" align=""left"" rowspan=""5"">" & formatGrafik(New DataTable) & "</td></tr>")
+        tab = New HtmlTable(4, "<tr><td width=""60%"" align=""left"" bgcolor=""white"" color=""black"">Einwohner im 3,0 EZB je km Streckenlänge:</td><td width=""40%"" align=""middle"" rowspan=""5"">" & formatGrafik(New DataTable) & "</td></tr>")
 
         Dim row1 As New HtmlTableRow()
         row1.AddCell(New HtmlTableCell("+ Strukturelle Bedeutung"))
@@ -43,19 +47,19 @@
 <defs>
 </defs>
 <rect x=""0"" y=""0"" width=""320"" height=""240"" fill=""none"" stroke=""black"" stroke-width=""3""  />
-<line x1=""160"" y1=""20"" x2=""160"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
+<line x1=""160"" y1=""20"" x2=""160"" y2=""180"" style=""stroke: black; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
 <line x1=""60"" y1=""20"" x2=""60"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
 <line x1=""110"" y1=""20"" x2=""110"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
 <line x1=""260"" y1=""20"" x2=""260"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
 <line x1=""210"" y1=""20"" x2=""210"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
-<line x1=""60"" y1=""20"" x2=""260"" y2=""20"" style=""stroke: grey; stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
+<line x1=""60"" y1=""30"" x2=""260"" y2=""30"" style=""stroke: grey; stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
 		<text x=""10"" y=""10"" xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-24"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">a) 0</tspan></text>
 <!--
 <g transform=""matrix(1 0 0 1 203 189.67)"" style=""""  >
 		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-24"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">a) 0</tspan></text>
 </g>-->
-<text text-anchor=""end""><tspan y=""20"" x=""55"">0</tspan></text>
-<text text-anchor=""end""><tspan y=""20"" x=""305"">2000</tspan></text>
+<text text-anchor=""end""><tspan y=""30"" x=""55"">0</tspan></text>
+<text text-anchor=""end""><tspan y=""30"" x=""305"">2000</tspan></text>
 <line x1=""120"" y1=""80"" x2=""200"" y2=""80"" style=""stroke: grey; stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
 <line x1=""120"" y1=""130"" x2=""200"" y2=""130"" style=""stroke: grey; stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
 <line x1=""120"" y1=""180"" x2=""200"" y2=""180"" style=""stroke: grey; stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
@@ -65,6 +69,23 @@
 <text text-anchor=""start""><tspan y=""130"" x=""210"">hoch</tspan></text>
 <text text-anchor=""end""><tspan y=""180"" x=""110"">nein</tspan></text>
 <text text-anchor=""start""><tspan y=""180"" x=""210"">hoch</tspan></text>
+<text text-anchor=""middle""><tspan y=""230"" x=""60"">-2</tspan></text>
+<text text-anchor=""middle""><tspan y=""230"" x=""110"">-1</tspan></text>
+<text text-anchor=""middle""><tspan y=""230"" x=""160"">0</tspan></text>
+<text text-anchor=""middle""><tspan y=""230"" x=""210"">1</tspan></text>
+<text text-anchor=""middle""><tspan y=""230"" x=""260"">2</tspan></text>
+<polygon points=""150,10 160,30 170,10"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""150,60 160,80 170,60"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""150,110 160,130 170,110"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""150,160 160,180 170,160"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<rect x=""60"" y=""195"" width=""200"" height=""20"" fill=""url(#grad)"" />
+<defs>
+  <linearGradient id=""grad"" x1=""0%"" y1=""0%"" x2=""100%"" y2=""0%"">
+    <stop offset=""0%"" style=""stop-color: lightcoral;"" />
+    <stop offset=""100%"" style=""stop-color: lightgreen;"" />
+  </linearGradient>
+</defs>
+<polygon points=""150,195 160,215 170,195"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
 <!--
 <g transform=""matrix(1.79 0 0 0.28 301.25 342.14)""  >
 <linearGradient id=""SVGID_166"" gradientUnits=""userSpaceOnUse"" gradientTransform=""matrix(1 0 0 1 -50 -50)""  x1=""0"" y1=""50"" x2=""100"" y2=""50"">
