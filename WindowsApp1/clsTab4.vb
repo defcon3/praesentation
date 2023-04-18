@@ -42,7 +42,7 @@
         t = "<svg xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" version=""1.1"" width=""320"" height=""240"" viewBox=""0 0 320 240"" xml:space=""preserve""><desc>Created with Fabric.js 3.6.6</desc>
 <defs>
 </defs>
-<rect x=""0"" y=""0"" width=""320"" height=""240"" fill=""none"" stroke=""black"" stroke-width=""10""  />
+<rect x=""0"" y=""0"" width=""320"" height=""240"" fill=""none"" stroke=""black"" stroke-width=""3""  />
 <line x1=""160"" y1=""20"" x2=""160"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
 <line x1=""60"" y1=""20"" x2=""60"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
 <line x1=""110"" y1=""20"" x2=""110"" y2=""200"" style=""stroke: black; stroke-width: 1; stroke-dasharray: 1 10; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
@@ -54,12 +54,18 @@
 <g transform=""matrix(1 0 0 1 203 189.67)"" style=""""  >
 		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-24"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">a) 0</tspan></text>
 </g>-->
-<text text-anchor=""end"">
-  <tspan y=""15"" x=""78"">733 KB</tspan>
-</text><!--
-<g transform=""matrix(1.15 0 0 1.08 443.25 186.51)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-33.59"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">b) 2000</tspan></text>
-</g>
+<text text-anchor=""end""><tspan y=""20"" x=""55"">0</tspan></text>
+<text text-anchor=""end""><tspan y=""20"" x=""305"">2000</tspan></text>
+<line x1=""120"" y1=""80"" x2=""200"" y2=""80"" style=""stroke: grey; stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
+<line x1=""120"" y1=""130"" x2=""200"" y2=""130"" style=""stroke: grey; stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
+<line x1=""120"" y1=""180"" x2=""200"" y2=""180"" style=""stroke: grey; stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" />
+<text text-anchor=""end""><tspan y=""80"" x=""110"">nein</tspan></text>
+<text text-anchor=""start""><tspan y=""80"" x=""210"">ja</tspan></text>
+<text text-anchor=""end""><tspan y=""130"" x=""110"">gering</tspan></text>
+<text text-anchor=""start""><tspan y=""130"" x=""210"">hoch</tspan></text>
+<text text-anchor=""end""><tspan y=""180"" x=""110"">nein</tspan></text>
+<text text-anchor=""start""><tspan y=""180"" x=""210"">hoch</tspan></text>
+<!--
 <g transform=""matrix(1.79 0 0 0.28 301.25 342.14)""  >
 <linearGradient id=""SVGID_166"" gradientUnits=""userSpaceOnUse"" gradientTransform=""matrix(1 0 0 1 -50 -50)""  x1=""0"" y1=""50"" x2=""100"" y2=""50"">
 <stop offset=""0%"" style=""stop-color:rgba(255, 9, 0, 1);""/>
