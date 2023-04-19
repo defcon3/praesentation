@@ -91,9 +91,9 @@
 <text text-anchor=""middle""><tspan y=""230"" x=""160"">0</tspan></text>
 <text text-anchor=""middle""><tspan y=""230"" x=""210"">1</tspan></text>
 <text text-anchor=""middle""><tspan y=""230"" x=""260"">2</tspan></text>
-<polygon points=""150,60 160,80 170,60"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
-<polygon points=""150,110 160,130 170,110"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
-<polygon points=""150,160 160,180 170,160"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""" & (translateValue(dt.Rows(0)("wert2"), 200, 2000) + 60).ToString & ",60 " & (translateValue(dt.Rows(0)("wert2"), 200, 2000) + 60 + 10).ToString & ",30 " & (translateValue(dt.Rows(0)("wert2"), 200, 2000) + 60 + 20).ToString & ",60"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""" & (translateValue(dt.Rows(0)("wert3"), 200, 2000) + 60).ToString & ",110 " & (translateValue(dt.Rows(0)("wert3"), 200, 2000) + 60 + 10).ToString & ",30 " & (translateValue(dt.Rows(0)("wert3"), 200, 2000) + 60 + 20).ToString & ",110"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""" & (translateValue(dt.Rows(0)("wert4"), 200, 2000) + 60).ToString & ",160 " & (translateValue(dt.Rows(0)("wert4"), 200, 2000) + 60 + 10).ToString & ",30 " & (translateValue(dt.Rows(0)("wert4"), 200, 2000) + 60 + 20).ToString & ",160"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
 <rect x=""60"" y=""195"" width=""200"" height=""20"" fill=""url(#grad)"" />
 <defs>
   <linearGradient id=""grad"" x1=""0%"" y1=""0%"" x2=""100%"" y2=""0%"">
@@ -101,8 +101,8 @@
     <stop offset=""100%"" style=""stop-color: lightgreen;"" />
   </linearGradient>
 </defs>
-<polygon points=""" & translateValue(dt.Rows(0)("wert1"), 200, 2000).ToString & """150,195 160,215 170,195"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
-<polygon points=""150 ,10 160,30 170,10"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""" & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60).ToString & ",195 " & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60 + 10).ToString & ",215 " & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60 + 20).ToString & ",195"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""" & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60).ToString & ",10 " & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 + 10).ToString & ",30 " & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 + 20).ToString & ",10"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
 <!--
 <g transform=""matrix(1.79 0 0 0.28 301.25 342.14)""  >
 <linearGradient id=""SVGID_166"" gradientUnits=""userSpaceOnUse"" gradientTransform=""matrix(1 0 0 1 -50 -50)""  x1=""0"" y1=""50"" x2=""100"" y2=""50"">
@@ -175,6 +175,7 @@
         Dim w As Integer = 1
         Dim a As Integer = 0
         Dim m As Integer = 1
+
 
         w = wert
         a = achsenlaenge
