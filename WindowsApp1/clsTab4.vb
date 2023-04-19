@@ -105,65 +105,6 @@
 <polygon points=""" & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60 - 10).ToString & ",195 " & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60 + 10 - 10).ToString & ",215 " & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60 + 20 - 10).ToString & ",195"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
 <polygon points=""" & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 - 10).ToString & ",10 " & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 + 10 - 10).ToString & ",30 " & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 + 20 - 10).ToString & ",10"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
 <text  font-weight=""bold"" text-anchor=""end""><tspan y=""20"" x=""" & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 - 10).ToString & """>" & dt.Rows(0)("wert1") & "</tspan></text>
-<!--
-<g transform=""matrix(1.79 0 0 0.28 301.25 342.14)""  >
-<linearGradient id=""SVGID_166"" gradientUnits=""userSpaceOnUse"" gradientTransform=""matrix(1 0 0 1 -50 -50)""  x1=""0"" y1=""50"" x2=""100"" y2=""50"">
-<stop offset=""0%"" style=""stop-color:rgba(255, 9, 0, 1);""/>
-<stop offset=""100%"" style=""stop-color:rgba(54, 255, 0, 1);""/>
-</linearGradient>
-<polygon style=""stroke: rgb(0,0,0); stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_166); fill-rule: nonzero; opacity: 1;""  points=""-50,-50 -50,50 50,50 50,-50 "" />
-</g>
-<g transform=""matrix(-0.25 0 0 -0.25 279.61 191.72)""  >
-<polygon style=""stroke: rgb(0,0,0); stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(220,218,51); fill-rule: nonzero; opacity: 1;"" vector-effect=""non-scaling-stroke""  points=""0,-42.5 50,42.5 -50,42.5 "" />
-</g>
-<g transform=""matrix(1 0 0 1 288.01 204)""  >
-<line style=""stroke: rgb(150,150,150); stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"" vector-effect=""non-scaling-stroke""  x1=""-93.51203131148418"" y1=""0"" x2=""93.51203131148418"" y2=""0"" />
-</g>
-<g transform=""matrix(-0.25 0 0 -0.25 305.25 233.13)""  >
-<polygon style=""stroke: rgb(0,0,0); stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(46,221,242); fill-rule: nonzero; opacity: 1;""  points=""0,-42.5 50,42.5 -50,42.5 "" />
-</g>
-<g transform=""matrix(-0.25 0 0 -0.25 290.25 267.13)""  >
-<polygon style=""stroke: rgb(0,0,0); stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(201,18,211); fill-rule: nonzero; opacity: 1;""  points=""0,-42.5 50,42.5 -50,42.5 "" />
-</g>
-<g transform=""matrix(-0.25 0 0 -0.25 337.25 301.13)""  >
-<polygon style=""stroke: rgb(0,0,0); stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(244,160,19); fill-rule: nonzero; opacity: 1;""  points=""0,-42.5 50,42.5 -50,42.5 "" />
-</g>
-<g transform=""matrix(-0.35 0 0 -0.35 278.51 343.61)""  >
-<polygon style=""stroke: rgb(0,0,0); stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,54,255); fill-rule: nonzero; opacity: 1;""  points=""0,-42.5 50,42.5 -50,42.5 "" />
-</g>
-<g transform=""matrix(1 0 0 1 216.22 373.67)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-16.22"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">h)-2</tspan></text>
-</g>
-<g transform=""matrix(1 0 0 1 249.51 372.67)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-15.02"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">i)-1</tspan></text>
-</g>
-<g transform=""matrix(1 0 0 1 296.51 368.67)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-15.02"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">j)0</tspan></text>
-</g>
-<g transform=""matrix(1 0 0 1 348.17 374.67)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-17.67"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">k)+1</tspan></text>
-</g>
-<g transform=""matrix(1 0 0 1 392.72 373.67)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-15.22"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">l)+2</tspan></text>
-</g>
-<g transform=""matrix(1 0 0 1 239.33 225.67)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-25.33"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">c)nein</tspan></text>
-</g>
-<g transform=""matrix(1 0 0 1 236.55 297.67)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-24.05"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">f)nein</tspan></text>
-</g>
-<g transform=""matrix(1 0 0 1 250.96 265.67)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-34.46"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">d)gering</tspan></text>
-</g>
-<g transform=""matrix(1 0 0 1 386.51 231.67)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-23.01"" y=""5.65"" style=""stroke-width: 1; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: normal; font-weight: normal; fill: rgb(0,0,0); "">d)ja</tspan></text>
-</g>
-<g transform=""matrix(1 0 0 1 385.97 266.67)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-28.47"" y=""5.65"" >e)hoch</tspan></text>
-</g>
-<g transform=""matrix(1 0 0 1 390.81 298.67)"" style=""""  >
-		<text xml:space=""preserve"" font-family=""'Open Sans', sans-serif"" font-size=""18"" font-style=""normal"" font-weight=""normal"" style=""stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;"" ><tspan x=""-28.31"" y=""5.65"" >g)hoch</tspan></text>
-</g>-->
 </svg>"
 
 
