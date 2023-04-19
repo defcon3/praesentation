@@ -43,21 +43,22 @@
     Private Function formatGrafik(ByVal dt As DataTable) As String
 
         Dim k As New DataTable
-        k.Columns.Add("wert1")
-        k.Columns.Add("wert2")
-        k.Columns.Add("wert3")
-        k.Columns.Add("wert4")
-        k.Columns.Add("wert5")
+        k.Columns.Add("wert1") 'max 2000
+        k.Columns.Add("wert2") 'max 100
+        k.Columns.Add("wert3") 'max 100
+        k.Columns.Add("wert4") 'max 100
+        k.Columns.Add("wert5") 'max 2000
         Dim r As DataRow = k.NewRow
-        r(0) = 568
-        r(1) = 20
-        r(2) = 40
-        r(3) = 88
-        r(4) = 29
+        r("wert1") = 1230
+        r("wert2") = 20
+        r("wert3") = 40
+        r("wert4") = 79
+        r("wert5") = 888
         k.Rows.Add(r)
 
         dt = k
 
+        'MsgBox((translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60).ToString)
 
         Dim t As String
         t = "<svg xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" version=""1.1"" width=""320"" height=""240"" viewBox=""0 0 320 240"" xml:space=""preserve""><desc>Created with Fabric.js 3.6.6</desc>
@@ -91,9 +92,9 @@
 <text text-anchor=""middle""><tspan y=""230"" x=""160"">0</tspan></text>
 <text text-anchor=""middle""><tspan y=""230"" x=""210"">1</tspan></text>
 <text text-anchor=""middle""><tspan y=""230"" x=""260"">2</tspan></text>
-<polygon points=""" & (translateValue(dt.Rows(0)("wert2"), 200, 2000) + 60).ToString & ",60 " & (translateValue(dt.Rows(0)("wert2"), 200, 2000) + 60 + 10).ToString & ",30 " & (translateValue(dt.Rows(0)("wert2"), 200, 2000) + 60 + 20).ToString & ",60"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
-<polygon points=""" & (translateValue(dt.Rows(0)("wert3"), 200, 2000) + 60).ToString & ",110 " & (translateValue(dt.Rows(0)("wert3"), 200, 2000) + 60 + 10).ToString & ",30 " & (translateValue(dt.Rows(0)("wert3"), 200, 2000) + 60 + 20).ToString & ",110"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
-<polygon points=""" & (translateValue(dt.Rows(0)("wert4"), 200, 2000) + 60).ToString & ",160 " & (translateValue(dt.Rows(0)("wert4"), 200, 2000) + 60 + 10).ToString & ",30 " & (translateValue(dt.Rows(0)("wert4"), 200, 2000) + 60 + 20).ToString & ",160"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""" & (translateValue(dt.Rows(0)("wert2"), 80, 100) + 120 - 10).ToString & ",60 " & (translateValue(dt.Rows(0)("wert2"), 80, 100) + 120 + 10 - 10).ToString & ",80 " & (translateValue(dt.Rows(0)("wert2"), 80, 100) + 120 + 20 - 10).ToString & ",60"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""" & (translateValue(dt.Rows(0)("wert3"), 80, 100) + 120 - 10).ToString & ",110 " & (translateValue(dt.Rows(0)("wert3"), 80, 100) + 120 + 10 - 10).ToString & ",130 " & (translateValue(dt.Rows(0)("wert3"), 80, 100) + 120 + 20 - 10).ToString & ",110"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""" & (translateValue(dt.Rows(0)("wert4"), 80, 100) + 120 - 10).ToString & ",160 " & (translateValue(dt.Rows(0)("wert4"), 80, 100) + 120 + 10 - 10).ToString & ",180 " & (translateValue(dt.Rows(0)("wert4"), 80, 100) + 120 + 20 - 10).ToString & ",160"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
 <rect x=""60"" y=""195"" width=""200"" height=""20"" fill=""url(#grad)"" />
 <defs>
   <linearGradient id=""grad"" x1=""0%"" y1=""0%"" x2=""100%"" y2=""0%"">
@@ -101,8 +102,9 @@
     <stop offset=""100%"" style=""stop-color: lightgreen;"" />
   </linearGradient>
 </defs>
-<polygon points=""" & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60).ToString & ",195 " & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60 + 10).ToString & ",215 " & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60 + 20).ToString & ",195"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
-<polygon points=""" & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60).ToString & ",10 " & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 + 10).ToString & ",30 " & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 + 20).ToString & ",10"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""" & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60 - 10).ToString & ",195 " & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60 + 10 - 10).ToString & ",215 " & (translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60 + 20 - 10).ToString & ",195"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""" & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 - 10).ToString & ",10 " & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 + 10 - 10).ToString & ",30 " & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 + 20 - 10).ToString & ",10"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<text  font-weight=""bold"" text-anchor=""end""><tspan y=""20"" x=""" & (translateValue(dt.Rows(0)("wert1"), 200, 2000) + 60 - 10).ToString & """>" & dt.Rows(0)("wert1") & "</tspan></text>
 <!--
 <g transform=""matrix(1.79 0 0 0.28 301.25 342.14)""  >
 <linearGradient id=""SVGID_166"" gradientUnits=""userSpaceOnUse"" gradientTransform=""matrix(1 0 0 1 -50 -50)""  x1=""0"" y1=""50"" x2=""100"" y2=""50"">
