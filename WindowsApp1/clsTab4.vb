@@ -42,6 +42,23 @@
 
     Private Function formatGrafik(ByVal dt As DataTable) As String
 
+        Dim k As New DataTable
+        k.Columns.Add("wert1")
+        k.Columns.Add("wert2")
+        k.Columns.Add("wert3")
+        k.Columns.Add("wert4")
+        k.Columns.Add("wert5")
+        Dim r As DataRow = k.NewRow
+        r(0) = 568
+        r(1) = 20
+        r(2) = 40
+        r(3) = 88
+        r(4) = 29
+        k.Rows.Add(r)
+
+        dt = k
+
+
         Dim t As String
         t = "<svg xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" version=""1.1"" width=""320"" height=""240"" viewBox=""0 0 320 240"" xml:space=""preserve""><desc>Created with Fabric.js 3.6.6</desc>
 <defs>
@@ -74,7 +91,6 @@
 <text text-anchor=""middle""><tspan y=""230"" x=""160"">0</tspan></text>
 <text text-anchor=""middle""><tspan y=""230"" x=""210"">1</tspan></text>
 <text text-anchor=""middle""><tspan y=""230"" x=""260"">2</tspan></text>
-<polygon points=""150,10 160,30 170,10"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
 <polygon points=""150,60 160,80 170,60"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
 <polygon points=""150,110 160,130 170,110"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
 <polygon points=""150,160 160,180 170,160"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
@@ -85,7 +101,8 @@
     <stop offset=""100%"" style=""stop-color: lightgreen;"" />
   </linearGradient>
 </defs>
-<polygon points=""150,195 160,215 170,195"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""" & translateValue(dt.Rows(0)("wert1"), 200, 2000).ToString & """150,195 160,215 170,195"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
+<polygon points=""150 ,10 160,30 170,10"" fill=""#87CEFA"" stroke=""#00008B"" stroke-width=""1"" />
 <!--
 <g transform=""matrix(1.79 0 0 0.28 301.25 342.14)""  >
 <linearGradient id=""SVGID_166"" gradientUnits=""userSpaceOnUse"" gradientTransform=""matrix(1 0 0 1 -50 -50)""  x1=""0"" y1=""50"" x2=""100"" y2=""50"">
@@ -149,8 +166,23 @@
 
 
         Return t
+
+
     End Function
 
+    Private Function translateValue(ByVal wert As Integer, ByVal achsenlaenge As Integer, ByVal maximalwert As Integer) As Integer
 
+        Dim w As Integer = 1
+        Dim a As Integer = 0
+        Dim m As Integer = 1
+
+        w = wert
+        a = achsenlaenge
+        m = maximalwert
+
+        Return CInt(w / m * a)
+
+
+    End Function
 
 End Class
