@@ -26,16 +26,18 @@ Public Class HtmlTable
         Select Case _nummer
             Case 1
                 tableHtml.Append("<table border=""1"" style=""background-color: blue; width: 100%; color: white;"">")
-            Case 2
+            Case 2, 5
                 tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: gray;"">")
             Case 3
                 tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%;"">")
             Case 4
                 tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%;"">")
-            Case 5
-                tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: gray;"">")
+                'Case 5
+                'tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: gray;"">")
             Case 6
-                tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: gray;"">")
+                tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: black;"">")
+            Case 7, 8
+                tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: black;"">")
             Case 99
                 tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: gray;"">")
         End Select

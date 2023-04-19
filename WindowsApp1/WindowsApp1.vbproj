@@ -78,6 +78,8 @@
     <Compile Include="clsTab3.vb" />
     <Compile Include="clsTab4.vb" />
     <Compile Include="clsTab6.vb" />
+    <Compile Include="clsTab7.vb" />
+    <Compile Include="clsTab8.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>

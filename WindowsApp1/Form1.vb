@@ -15,6 +15,8 @@
 
         Dim tab5 As New clstab2(5)
         Dim tab6 As New clsTab6(6)
+        Dim tab7 As New clsTab7(7)
+        Dim tab8 As New clsTab8(8)
 
 
         Dim k As New DataTable
@@ -94,7 +96,7 @@
 
 
         ' Zusammenkleben
-        tab1.anhang = tab1.ToString & tab2.ToString & tab3.ToString & tab4.ToString & tab5.ToString & tab6.ToString
+        tab1.anhang = tab1.ToString & tab2.ToString & tab3.ToString & tab4.ToString & tab5.ToString & tab6.ToString & tab7.ToString & tab8.ToString
 
 
         tab1.SaveToFile("table.html")
