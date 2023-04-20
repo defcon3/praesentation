@@ -12,7 +12,7 @@
     End Sub
 
     Public Overrides Function ToString() As String
-        tab = New HtmlTable(1, "<tr><th width=""2%"" align=""left"" bgcolor=""blue"" color=""white"">Nr:</th><th width=""5%"" align=""left"">" & nummer & "</th><th width=""13%"" align=""left"">Strecke:</th><th width=""80%"" align=""left"">" & strecke & "</th></tr>")
+        tab = New HtmlTable(1, "<tr height=""50""><th width=""2%"" align=""left"" bgcolor=""blue"" color=""white"">" & nummer & "</th><th width=""13%"" align=""left"">Strecke:</th><th width=""80%"" align=""left"">" & strecke & "</th></tr>")
         Return tab.ToHtml
     End Function
 

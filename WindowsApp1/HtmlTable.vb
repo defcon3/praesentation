@@ -25,7 +25,7 @@ Public Class HtmlTable
 
         Select Case _nummer
             Case 1
-                tableHtml.Append("<table border=""1"" style=""background-color: blue; width: 100%; color: white;"">")
+                tableHtml.Append("<table border=""0"" style=""background-color: blue; width: 100%; color: white;"" font=""Arial, sans-serif"" size=""14"" color=""red"">")
             Case 2, 5, 14
                 tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: gray;"">")
             Case 3
