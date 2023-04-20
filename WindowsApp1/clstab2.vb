@@ -14,8 +14,14 @@
     Public Overrides Function ToString() As String
 
         tab = New HtmlTable(2, "<tr><th width=""20%"" align=""left"" bgcolor=""white"" color=""gray"">Verkehrspotenzial</th><th width=""80%"" align=""left"">______________________________________________________________________________________________________</th></tr>")
-        If nummer <> 2 Then
+        If nummer = 5 Then
             tab = New HtmlTable(5, "<tr><th width=""20%"" align=""left"" bgcolor=""white"" color=""gray"">Ausschlusskriterien</th><th width=""80%"" align=""left"">______________________________________________________________________________________________________</th></tr>")
+        End If
+        If nummer = 14 Then
+            tab = New HtmlTable(14, "<tr><th width=""20%"" align=""left"" bgcolor=""white"" color=""gray"">Ergebnis</th><th width=""80%"" align=""left"">______________________________________________________________________________________________________</th></tr>")
+        End If
+        If nummer = 16 Then
+            tab = New HtmlTable(16, "<tr><th width=""20%"" align=""left"" bgcolor=""white"" color=""gray"">Lageplan</th><th width=""80%"" align=""left"">______________________________________________________________________________________________________</th></tr>")
         End If
 
 

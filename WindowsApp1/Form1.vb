@@ -17,6 +17,15 @@
         Dim tab6 As New clsTab6(6)
         Dim tab7 As New clsTab7(7)
         Dim tab8 As New clsTab8(8)
+        Dim tab9 As New clsTab9(9)
+        Dim tab10 As New clsTab10(10)
+        Dim tab11 As New clsTab11(11)
+        Dim tab12 As New clsTab12(12)
+        Dim tab13 As New clsTab13(13)
+        Dim tab14 As New clsTab2(14)
+        Dim tab15 As New clsTab15(15)
+        Dim tab16 As New clsTab2(16)
+        Dim tab17 As New clsTab17(17)
 
 
         Dim k As New DataTable
@@ -96,7 +105,8 @@
 
 
         ' Zusammenkleben
-        tab1.anhang = tab1.ToString & tab2.ToString & tab3.ToString & tab4.ToString & tab5.ToString & tab6.ToString & tab7.ToString & tab8.ToString
+        tab1.anhang = tab1.ToString & tab2.ToString & tab3.ToString & tab4.ToString & tab5.ToString & tab6.ToString & tab7.ToString & tab8.ToString & tab9.ToString & tab10.ToString & tab11.ToString & tab12.ToString & tab13.ToString &
+            "<div style=""page-break-before: always;"">" & tab1.ToString & "</div>" & tab2.ToString & tab14.ToString & tab15.ToString & tab16.ToString & tab17.ToString
 
 
         tab1.SaveToFile("table.html")

@@ -74,12 +74,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsTab1.vb" />
+    <Compile Include="clsTab10.vb" />
+    <Compile Include="clsTab11.vb" />
+    <Compile Include="clsTab12.vb" />
+    <Compile Include="clsTab13.vb" />
+    <Compile Include="clsTab15.vb" />
+    <Compile Include="clsTab17.vb" />
     <Compile Include="clstab2.vb" />
     <Compile Include="clsTab3.vb" />
     <Compile Include="clsTab4.vb" />
     <Compile Include="clsTab6.vb" />
     <Compile Include="clsTab7.vb" />
     <Compile Include="clsTab8.vb" />
+    <Compile Include="clsTab9.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>

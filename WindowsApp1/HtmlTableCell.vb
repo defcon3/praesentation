@@ -17,6 +17,11 @@
 
     Public Function ToHtml() As String
 
+        If hintergrundfarbe = Color.MistyRose Then
+            Return "<td align=""center""" & ColorTranslator.ToHtml(hintergrundfarbe) & """>" & _text & "</td>"
+        End If
+
+
         Return "<td bgcolor=""" & ColorTranslator.ToHtml(hintergrundfarbe) & """>" & _text & "</td>"
     End Function
 End Class
