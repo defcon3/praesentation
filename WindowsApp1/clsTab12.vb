@@ -40,7 +40,7 @@
         dt = k.Copy
 
         dt = d
-
+        If Not dt Is Nothing Then dt.Columns.RemoveAt(0)
 
     End Sub
 
@@ -59,10 +59,10 @@
 
 
         For Each rw In dt.Rows
-            row.AddCell(New HtmlTableCell(rw(0).ToString, IIf(rw(5) Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(1).ToString & "</br>" & rw(2).ToString, IIf(rw(5) Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(3).ToString, IIf(rw(5) Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(4).ToString, IIf(rw(5) Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(0).ToString, IIf(rw(4) Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(1).ToString & "</br>" & rw(2).ToString, IIf(rw(4) Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(3).ToString, IIf(rw(4) Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(4).ToString, IIf(rw(4) Mod 2 = 1, Color.White, Color.LightGray)))
             'row.AddCell(New HtmlTableCell(rw(0).ToString, , Color.White))
             innertab.AddRow(row)
             row = New HtmlTableRow

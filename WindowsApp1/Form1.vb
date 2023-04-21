@@ -34,12 +34,13 @@ Public Class Form1
         Dim tab16 As New clsTab2(16)
         Dim tab17 As New clsTab17(17)
 
+        Dim temptable As New DataTable
 
         For i = 0 To xslTab1.Rows.Count - 1
 
             tab1 = New clsTab1(1) With {.nummer = xslTab1.Rows(i)("Nr"), .strecke = xslTab1.Rows(i)("Strecke")}
             tab2 = New clsTab2(2)
-            tab3 = New clsTab3(3)
+            tab3 = New clsTab3(3,, xslTab2.Select("Nr=" & xslTab1.Rows(i)("Nr")).ToList.CopyToDataTable)
             tab4 = New clsTab4(4) With {.z1 = xslTab1.Rows(i)("Zahl1"), .z2 = xslTab1.Rows(i)("Zahl2"), .z3 = xslTab1.Rows(i)("Zahl3"), .z4 = xslTab1.Rows(i)("Zahl4"), .z5 = xslTab1.Rows(i)("Zahl5")}
             tab5 = New clsTab2(5)
             tab6 = New clsTab6(6) With {.wert = xslTab1.Rows(i)("Resultat1")}
@@ -48,7 +49,7 @@ Public Class Form1
             tab9 = New clsTab9(9) With {.resultat = xslTab1.Rows(i)("Resultat4")}
             tab10 = New clsTab10(10) With {.e1 = xslTab1.Rows(i)("Einwohner1"), .e2 = xslTab1.Rows(i)("Einwohner2"), .e3 = xslTab1.Rows(i)("Einwohner3"), .e4 = xslTab1.Rows(i)("Einwohner4"), .e5 = xslTab1.Rows(i)("Einwohner5"), .e6 = xslTab1.Rows(i)("Einwohner6")}
             tab11 = New clsTab11(11) With {.resultat = xslTab1.Rows(i)("Resultat5")}
-            tab12 = New clsTab12(12,, xslTab2)
+            tab12 = New clsTab12(12,, xslTab3.Select("Nr=" & xslTab1.Rows(i)("Nr")).ToList.CopyToDataTable)
             tab15 = New clsTab15(15) With {.resultat = xslTab1.Rows(i)("Ergebnis")}
 
 

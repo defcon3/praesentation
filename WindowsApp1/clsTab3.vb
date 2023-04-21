@@ -7,7 +7,7 @@
     Public dt As New DataTable
 
 
-    Public Sub New(ByVal nr As Integer, Optional ByVal breiten As String = "")
+    Public Sub New(ByVal nr As Integer, Optional ByVal breiten As String = "", Optional d As DataTable = Nothing)
         MyBase.New(nr, breiten)
         nummer = nr
 
@@ -60,6 +60,8 @@
 
         dt = k.Copy
 
+        dt = d
+        'If Not dt Is Nothing Then dt.Columns.RemoveAt(0)
 
 
     End Sub
@@ -75,16 +77,25 @@
 <th width=""10%"" align=""center"">Einwohner (1,5 km EZB)</th>
 <th width=""10%"" align=""center"">Einwohner (3,0 km EZB)</th>
 <th width=""0%"" align=""center"" color=""white""></th>")
-        Dim rr As DataRow
+
+        Dim z = 1
 
         For Each rw In dt.Rows
-            row.AddCell(New HtmlTableCell(rw(1).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(2).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(3).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(4).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(5).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(6).ToString, IIf(rw(0) Mod 2 = 1, Color.White, Color.LightGray)))
+            'row.AddCell(New HtmlTableCell(rw(1).ToString, IIf(rw(6) Mod 2 = 1, Color.White, Color.LightGray)))
+            'row.AddCell(New HtmlTableCell(rw(2).ToString, IIf(rw(6) Mod 2 = 1, Color.White, Color.LightGray)))
+            'row.AddCell(New HtmlTableCell(rw(3).ToString, IIf(rw(6) Mod 2 = 1, Color.White, Color.LightGray)))
+            'row.AddCell(New HtmlTableCell(rw(4).ToString, IIf(rw(6) Mod 2 = 1, Color.White, Color.LightGray)))
+            'row.AddCell(New HtmlTableCell(rw(5).ToString, IIf(rw(6) Mod 2 = 1, Color.White, Color.LightGray)))
+            'row.AddCell(New HtmlTableCell(rw(6).ToString, IIf(rw(6) Mod 2 = 1, Color.White, Color.LightGray)))
+
+            row.AddCell(New HtmlTableCell(rw(1).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(2).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(3).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(4).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(5).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(6).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
             'row.AddCell(New HtmlTableCell(rw(0).ToString, , Color.White))
+            z += 1
             innertab.AddRow(row)
             row = New HtmlTableRow
         Next
