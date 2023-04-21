@@ -11,34 +11,6 @@
         MyBase.New(nr, breiten)
         nummer = nr
 
-
-        Dim k As New DataTable
-        k.Columns.Add("Streckennr")
-        k.Columns.Add("Abschnitt")
-        k.Columns.Add("Status")
-        k.Columns.Add("Betreiber")
-        k.Columns.Add("km")
-        k.Columns.Add("zeilennummer")
-        Dim r As DataRow
-        r = k.NewRow
-        r(0) = "1820"
-        r(1) = "Voldagsen – Salzhemmendorf"
-        r(2) = "Anschlussbahn ohne regelmäßigen Verkehr"
-        r(3) = "Rheinkalk"
-        r(4) = "4,7"
-        r(5) = 1
-        k.Rows.Add(r)
-        r = k.NewRow
-        r(0) = "1821"
-        r(1) = "Salzhemmendorf – Duingen"
-        r(2) = "Anschlussbahn ohne Verkehr, Betrieb eingestellt"
-        r(3) = "-"
-        r(4) = "4,7"
-        r(5) = 2
-        k.Rows.Add(r)
-
-        dt = k.Copy
-
         dt = d
         If Not dt Is Nothing Then dt.Columns.RemoveAt(0)
 
@@ -57,13 +29,17 @@
 <th width=""0%"" align=""center"" color=""white""></th>")
 
 
+        Dim z As Integer = 1
+
+        Dim summe1 As Double
 
         For Each rw In dt.Rows
-            row.AddCell(New HtmlTableCell(rw(0).ToString, IIf(rw(4) Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(1).ToString & "</br>" & rw(2).ToString, IIf(rw(4) Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(3).ToString, IIf(rw(4) Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(4).ToString, IIf(rw(4) Mod 2 = 1, Color.White, Color.LightGray)))
-            'row.AddCell(New HtmlTableCell(rw(0).ToString, , Color.White))
+            row.AddCell(New HtmlTableCell(rw(0).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(1).ToString & "</br>" & rw(2).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(3).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(4).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
+            z += 1
+            summe1 += rw(4)
             innertab.AddRow(row)
             row = New HtmlTableRow
         Next
@@ -72,7 +48,7 @@
         row.AddCell(New HtmlTableCell(""))
         row.AddCell(New HtmlTableCell(""))
         row.AddCell(New HtmlTableCell(""))
-        row.AddCell(New HtmlTableCell("9,4"))
+        row.AddCell(New HtmlTableCell(summe1.ToString))
         'row.AddCell(New HtmlTableCell("11.955"))
 
 

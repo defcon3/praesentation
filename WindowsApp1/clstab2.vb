@@ -13,7 +13,7 @@
 
     Public Overrides Function ToString() As String
 
-        tab = New HtmlTable(2, "<tr><th width=""20%"" align=""left"" bgcolor=""white"" color=""gray"">Verkehrspotenzial</th><th width=""80%"" align=""left"">______________________________________________________________________________________________________</th></tr>")
+        tab = New HtmlTable(2, "<tr><th width=""20%"" align=""left"" bgcolor=""white"" color=""green"">Verkehrspotenzial</th><th width=""80%"" align=""left"">______________________________________________________________________________________________________</th></tr>")
         If nummer = 5 Then
             tab = New HtmlTable(5, "<tr><th width=""20%"" align=""left"" bgcolor=""white"" color=""gray"">Ausschlusskriterien</th><th width=""80%"" align=""left"">______________________________________________________________________________________________________</th></tr>")
         End If
