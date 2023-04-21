@@ -1,4 +1,9 @@
-﻿Public Class Form1
+﻿Imports Microsoft.Office.Interop
+Imports System.Runtime.InteropServices
+Public Class Form1
+
+    Private xslTab1 As New DataTable
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
 
@@ -9,11 +14,11 @@
 
 
         Dim tab1 As New clsTab1(1) With {.nummer = 949, .strecke = "Trakehnerweg"}
-        Dim tab2 As New clstab2(2)
+        Dim tab2 As New clsTab2(2)
         Dim tab3 As New clsTab3(3)
-        Dim tab4 As New clsTab4(4)
+        Dim tab4 As New clsTab4(4) With {.z1 = 0, .z2 = 1, .z3 = 2, .z4 = 3, .z5 = 4}
 
-        Dim tab5 As New clstab2(5)
+        Dim tab5 As New clsTab2(5)
         Dim tab6 As New clsTab6(6)
         Dim tab7 As New clsTab7(7)
         Dim tab8 As New clsTab8(8)
@@ -26,6 +31,23 @@
         Dim tab15 As New clsTab15(15)
         Dim tab16 As New clsTab2(16)
         Dim tab17 As New clsTab17(17)
+
+
+        For i = 0 To xslTab1.Rows.Count - 1
+
+            tab1 = New clsTab1(1) With {.nummer = xslTab1.Rows(i)("Nr"), .strecke = xslTab1.Rows(i)("Strecke")}
+            tab2 = New clsTab2(2)
+            tab3 = New clsTab3(3)
+            tab4 = New clsTab4(4) With {.z1 = xslTab1.Rows(i)("Zahl1"), .z2 = xslTab1.Rows(i)("Zahl2"), .z3 = xslTab1.Rows(i)("Zahl3"), .z4 = xslTab1.Rows(i)("Zahl4"), .z5 = xslTab1.Rows(i)("Zahl5")}
+            tab5 = New clsTab2(5)
+            tab6 = New clsTab6(6) With {.wert = "Nö"}
+
+        Next
+
+
+
+
+
 
 
         Dim k As New DataTable
@@ -120,6 +142,77 @@
 
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim xlApp As New Excel.Application
+        Dim xlWorkbook As Excel.Workbook = Nothing
+        Dim xlWorksheet As Excel.Worksheet = Nothing
+        Dim excelTabelle1 As New clsExcelTabelle1
+
+        Try
+            ' Pfad und Dateiname des Excel-Files
+            Dim path As String = "C:\Temp\report\Zahlenbeispiel.xlsx"
+
+            ' Excel-Application starten und Excel-File öffnen
+            xlWorkbook = xlApp.Workbooks.Open(path)
+
+            ' Tabellenblatt auswählen
+            xlWorksheet = CType(xlWorkbook.Sheets("Tabelle1"), Excel.Worksheet)
+
+            ' Daten aus der Zelle A1 lesen
+            'Dim cellValue As String = xlWorksheet.Range("A1").Value.ToString()
+            Dim range As Excel.Range = xlWorksheet.Range("A2:V5")
+            Dim data As Object(,) = range.Value
+
+            Dim newtab As New clsExcelTabelle1
+            newtab.getnewtab()
+            Dim dr As DataRow
+
+            ' Schleife über die Zeilen des Arrays
+            For i As Integer = 1 To data.GetLength(0)
+
+                dr = newtab.dt.NewRow
+                ' Schleife über die Spalten des Arrays
+                For j As Integer = 1 To data.GetLength(1)
 
 
+                    dr(j - 1) = data(i, j)
+
+
+                    ' Datenverarbeitung für die Zelle in Zeile i, Spalte j...
+                    ' ...
+                    ' Beispiel: Ausgabe des Zelleninhalts für die Zelle in Zeile i, Spalte j
+                    Console.WriteLine(data(i, j))
+                Next
+                newtab.dt.Rows.Add(dr)
+
+            Next
+
+
+
+            xslTab1 = newtab.dt
+
+
+
+
+            ' Datenverarbeitung...
+            ' ...
+
+        Catch ex As Exception
+            ' Fehlerbehandlung...
+        Finally
+            ' Excel-Workbook und -Application schließen
+            If xlWorkbook IsNot Nothing Then
+                xlWorkbook.Close(False)
+                Marshal.ReleaseComObject(xlWorkbook)
+            End If
+            If xlApp IsNot Nothing Then
+                xlApp.Quit()
+                Marshal.ReleaseComObject(xlApp)
+            End If
+        End Try
+
+
+
+
+    End Sub
 End Class

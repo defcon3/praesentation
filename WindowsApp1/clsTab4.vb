@@ -5,20 +5,44 @@
     Public nummer As Int16 = 1
     Public strecke As String = ""
 
-    Public dreieck1, dreieck2, dreieck3, dreieck4 As Decimal
+    Public tabelle As DataTable
 
-
+    Public z1, z2, z3, z4, z5 As Integer
 
     Public Sub New(ByVal nr As Integer, Optional ByVal breiten As String = "")
         MyBase.New(nr, breiten)
         nummer = nr
 
+        Dim k As New DataTable
+        k.Columns.Add("wert1") 'max 2000
+        k.Columns.Add("wert2") 'max 100
+        k.Columns.Add("wert3") 'max 100
+        k.Columns.Add("wert4") 'max 100
+        k.Columns.Add("wert5") 'max 2000
+
+
+
+
+        tabelle = k
+
     End Sub
 
     Public Overrides Function ToString() As String
 
+        Dim dr As DataRow
+
+        dr = tabelle.NewRow
+        dr(0) = z1
+        dr(1) = z2
+        dr(2) = z3
+        dr(3) = z4
+        dr(4) = z5
+        tabelle.Rows.Add(dr)
+
+
+
         'tab = New HtmlTable(4, "<tr><th width=""60%"" align=""left"" bgcolor=""white"" color=""black"">asdf</th><th width=""40%"" align=""left"">vdxd</th></tr>")
-        tab = New HtmlTable(4, "<tr><td width=""60%"" align=""left"" bgcolor=""white"" color=""black"">Einwohner im 3,0 EZB je km Streckenlänge:</td><td width=""40%"" align=""middle"" rowspan=""5"">" & formatGrafik(New DataTable) & "</td></tr>")
+        tab = New HtmlTable(4, "<tr><td width=""60%"" align=""left"" bgcolor=""white"" color=""black"">Einwohner im 3,0 EZB je km Streckenlänge:</td><td width=""40%"" align=""middle"" rowspan=""5"">" & formatGrafik(tabelle) & "</td></tr>")
 
         Dim row1 As New HtmlTableRow()
         row1.AddCell(New HtmlTableCell("+ Strukturelle Bedeutung"))
@@ -40,25 +64,32 @@
         Return tab.ToHtml
     End Function
 
+
     Private Function formatGrafik(ByVal dt As DataTable) As String
 
-        Dim k As New DataTable
-        k.Columns.Add("wert1") 'max 2000
-        k.Columns.Add("wert2") 'max 100
-        k.Columns.Add("wert3") 'max 100
-        k.Columns.Add("wert4") 'max 100
-        k.Columns.Add("wert5") 'max 2000
-        Dim r As DataRow = k.NewRow
-        r("wert1") = 1230
-        r("wert2") = 20
-        r("wert3") = 40
-        r("wert4") = 79
-        r("wert5") = 888
-        k.Rows.Add(r)
+        'Dim k As New DataTable
+        'k.Columns.Add("wert1") 'max 2000
+        'k.Columns.Add("wert2") 'max 100
+        'k.Columns.Add("wert3") 'max 100
+        'k.Columns.Add("wert4") 'max 100
+        'k.Columns.Add("wert5") 'max 2000
+        'Dim r As DataRow = k.NewRow
+        'r("wert1") = 1230
+        'r("wert2") = 20
+        'r("wert3") = 40
+        'r("wert4") = 79
+        'r("wert5") = 888
+        'k.Rows.Add(r)
 
-        dt = k
+        'dt = k
 
         'MsgBox((translateValue(dt.Rows(0)("wert5"), 200, 2000) + 60).ToString)
+
+
+
+
+
+
 
         Dim t As String
         t = "<svg xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" version=""1.1"" width=""320"" height=""240"" viewBox=""0 0 320 240"" xml:space=""preserve""><desc>Created with Fabric.js 3.6.6</desc>
