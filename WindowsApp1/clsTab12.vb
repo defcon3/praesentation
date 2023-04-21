@@ -7,7 +7,7 @@
     Public dt As New DataTable
 
 
-    Public Sub New(ByVal nr As Integer, Optional ByVal breiten As String = "")
+    Public Sub New(ByVal nr As Integer, Optional ByVal breiten As String = "", Optional ByVal d As DataTable = Nothing)
         MyBase.New(nr, breiten)
         nummer = nr
 
@@ -39,6 +39,7 @@
 
         dt = k.Copy
 
+        dt = d
 
 
     End Sub
@@ -54,7 +55,8 @@
 <th width=""10%"" align=""center"">Betreiber</th>
 <th width=""5%"" align=""center"">km</th>
 <th width=""0%"" align=""center"" color=""white""></th>")
-        Dim rr As DataRow
+
+
 
         For Each rw In dt.Rows
             row.AddCell(New HtmlTableCell(rw(0).ToString, IIf(rw(5) Mod 2 = 1, Color.White, Color.LightGray)))

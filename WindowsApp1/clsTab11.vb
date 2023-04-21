@@ -24,7 +24,7 @@
         tab = New HtmlTable(11, "<tr><td width=""90%"" align=""left"" bgcolor=""white"" color=""black"">5. Hohe Investitionskosten</td><td width=""10%"" align=""middle"" rowspan=""2"" border=""1"">" & resultat & "</td></tr>")
 
         Dim row1 As New HtmlTableRow()
-        row1.AddCell(New HtmlTableCell("&nbsp;&nbsp;&nbspStreckenstatus"))
+        row1.AddCell(New HtmlTableCell("&nbsp;&nbsp;&nbsp;Streckenstatus"))
         tab.AddRow(row1)
 
 

@@ -13,7 +13,7 @@
         MyBase.New(nr, breiten)
         nummer = nr
 
-        wert = "Nein"
+        ' wert = "Nein"
 
     End Sub
 

@@ -13,12 +13,14 @@
     Public Sub New(ByVal nr As Integer, Optional ByVal breiten As String = "")
         MyBase.New(nr, breiten)
         nummer = nr
-        resultat = "Ja"
-        wert = 44
+        'resultat = "Ja"
+        'wert = 44
 
     End Sub
 
     Public Overrides Function ToString() As String
+
+
 
         'tab = New HtmlTable(4, "<tr><th width=""60%"" align=""left"" bgcolor=""white"" color=""black"">asdf</th><th width=""40%"" align=""left"">vdxd</th></tr>")
         tab = New HtmlTable(7, "<tr><td width=""90%"" align=""left"" bgcolor=""white"" color=""black"">2. Haltestellen abseits Siedlungsschwerpunkte</td><td width=""10%"" align=""middle"" rowspan=""2"" border=""1"">" & resultat & "</td></tr>")

@@ -74,6 +74,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsExcelTabelle1.vb" />
+    <Compile Include="clsExcelTabelle2.vb" />
+    <Compile Include="clsExcelTabelle3.vb" />
     <Compile Include="clsTab1.vb" />
     <Compile Include="clsTab10.vb" />
     <Compile Include="clsTab11.vb" />

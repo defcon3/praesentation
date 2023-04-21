@@ -25,7 +25,6 @@
         dta.Columns.Add("Resultat6", GetType(String))
         dta.Columns.Add("Bemerkung6", GetType(String))
         dta.Columns.Add("Ergebnis", GetType(String))
-
         Me.dt = dta
 
     End Sub

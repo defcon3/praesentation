@@ -13,7 +13,7 @@
     Public Sub New(ByVal nr As Integer, Optional ByVal breiten As String = "")
         MyBase.New(nr, breiten)
         nummer = nr
-        resultat = CStr("Strecke scheidet aus, da Verkehrspotential ""gering"" und mindestens ein weiteres Ausschlusskriterium zutrifft")
+        'resultat = CStr("Strecke scheidet aus, da Verkehrspotential ""gering"" und mindestens ein weiteres Ausschlusskriterium zutrifft")
         wert = 44
 
     End Sub

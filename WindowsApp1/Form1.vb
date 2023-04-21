@@ -3,6 +3,8 @@ Imports System.Runtime.InteropServices
 Public Class Form1
 
     Private xslTab1 As New DataTable
+    Private xslTab2 As New DataTable
+    Private xslTab3 As New DataTable
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
@@ -40,7 +42,17 @@ Public Class Form1
             tab3 = New clsTab3(3)
             tab4 = New clsTab4(4) With {.z1 = xslTab1.Rows(i)("Zahl1"), .z2 = xslTab1.Rows(i)("Zahl2"), .z3 = xslTab1.Rows(i)("Zahl3"), .z4 = xslTab1.Rows(i)("Zahl4"), .z5 = xslTab1.Rows(i)("Zahl5")}
             tab5 = New clsTab2(5)
-            tab6 = New clsTab6(6) With {.wert = "Nö"}
+            tab6 = New clsTab6(6) With {.wert = xslTab1.Rows(i)("Resultat1")}
+            tab7 = New clsTab7(7) With {.resultat = xslTab1.Rows(i)("Resultat2"), .wert = xslTab1.Rows(i)("Prozent2")}
+            tab8 = New clsTab8(8) With {.wert = xslTab1.Rows(i)("Resultat3")}
+            tab9 = New clsTab9(9) With {.resultat = xslTab1.Rows(i)("Resultat4")}
+            tab10 = New clsTab10(10) With {.e1 = xslTab1.Rows(i)("Einwohner1"), .e2 = xslTab1.Rows(i)("Einwohner2"), .e3 = xslTab1.Rows(i)("Einwohner3"), .e4 = xslTab1.Rows(i)("Einwohner4"), .e5 = xslTab1.Rows(i)("Einwohner5"), .e6 = xslTab1.Rows(i)("Einwohner6")}
+            tab11 = New clsTab11(11) With {.resultat = xslTab1.Rows(i)("Resultat5")}
+            tab12 = New clsTab12(12,, xslTab2)
+            tab15 = New clsTab15(15) With {.resultat = xslTab1.Rows(i)("Ergebnis")}
+
+
+
 
         Next
 
@@ -191,7 +203,88 @@ Public Class Form1
 
             xslTab1 = newtab.dt
 
+#Region "tabelle2"
 
+
+            ' Tabellenblatt auswählen
+            xlWorksheet = CType(xlWorkbook.Sheets("Tabelle2"), Excel.Worksheet)
+
+            ' Daten aus der Zelle A1 lesen
+            'Dim cellValue As String = xlWorksheet.Range("A1").Value.ToString()
+            range = xlWorksheet.Range("A2:G32")
+            data = range.Value
+
+            Dim newtab2 = New clsExcelTabelle2
+            newtab2.getnewtab()
+            Dim dr2 As DataRow
+
+            ' Schleife über die Zeilen des Arrays
+            For i As Integer = 1 To data.GetLength(0)
+
+                dr2 = newtab2.dt.NewRow
+                ' Schleife über die Spalten des Arrays
+                For j As Integer = 1 To data.GetLength(1)
+
+
+                    dr2(j - 1) = data(i, j)
+
+
+                    ' Datenverarbeitung für die Zelle in Zeile i, Spalte j...
+                    ' ...
+                    ' Beispiel: Ausgabe des Zelleninhalts für die Zelle in Zeile i, Spalte j
+                    Console.WriteLine(data(i, j))
+                Next
+                newtab2.dt.Rows.Add(dr2)
+
+            Next
+
+
+
+            xslTab2 = newtab2.dt
+
+#End Region
+
+
+#Region "tabelle3"
+
+
+            ' Tabellenblatt auswählen
+            xlWorksheet = CType(xlWorkbook.Sheets("Tabelle3"), Excel.Worksheet)
+
+            ' Daten aus der Zelle A1 lesen
+            'Dim cellValue As String = xlWorksheet.Range("A1").Value.ToString()
+            range = xlWorksheet.Range("A2:F7")
+            data = range.Value
+
+            Dim newtab3 = New clsExcelTabelle3
+            newtab3.getnewtab()
+            Dim dr3 As DataRow
+
+            ' Schleife über die Zeilen des Arrays
+            For i As Integer = 1 To data.GetLength(0)
+
+                dr3 = newtab3.dt.NewRow
+                ' Schleife über die Spalten des Arrays
+                For j As Integer = 1 To data.GetLength(1)
+
+
+                    dr3(j - 1) = data(i, j)
+
+
+                    ' Datenverarbeitung für die Zelle in Zeile i, Spalte j...
+                    ' ...
+                    ' Beispiel: Ausgabe des Zelleninhalts für die Zelle in Zeile i, Spalte j
+                    Console.WriteLine(data(i, j))
+                Next
+                newtab3.dt.Rows.Add(dr3)
+
+            Next
+
+
+
+            xslTab3 = newtab3.dt
+
+#End Region
 
 
             ' Datenverarbeitung...

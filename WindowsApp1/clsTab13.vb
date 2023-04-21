@@ -7,7 +7,7 @@
 
     Public wert As Integer
     Public resultat As String
-
+    Public bemerkung As String
 
 
     Public Sub New(ByVal nr As Integer, Optional ByVal breiten As String = "")
@@ -21,10 +21,10 @@
     Public Overrides Function ToString() As String
 
         'tab = New HtmlTable(4, "<tr><th width=""60%"" align=""left"" bgcolor=""white"" color=""black"">asdf</th><th width=""40%"" align=""left"">vdxd</th></tr>")
-        tab = New HtmlTable(9, "<tr><td width=""90%"" align=""left"" bgcolor=""white"" color=""black"">6. Einbindung in SPNV-Netz nicht herstellbar</td><td width=""10%"" align=""middle"" rowspan=""2"" border=""1"" bordercolor=""black"">" & resultat & "</td></tr>")
+        tab = New HtmlTable(13, "<tr><td width=""90%"" align=""left"" bgcolor=""white"" color=""black"">6. Einbindung in SPNV-Netz nicht herstellbar</td><td width=""10%"" align=""middle"" rowspan=""2"" border=""1"" bordercolor=""black"">" & resultat & "</td></tr>")
 
         Dim row1 As New HtmlTableRow()
-        row1.AddCell(New HtmlTableCell("&nbsp;&nbsp;&nbspkein stündlicher Anschluss am Verknüpfungsbahnhof möglich"))
+        row1.AddCell(New HtmlTableCell("&nbsp;&nbsp;&nbsp" & bemerkung))
         tab.AddRow(row1)
 
 
