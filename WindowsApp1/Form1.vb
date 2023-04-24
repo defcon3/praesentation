@@ -55,11 +55,12 @@ Public Class Form1
             tab10 = New clsTab10(10) With {.e1 = xslTab1.Rows(i)("Einwohner1"), .e2 = xslTab1.Rows(i)("Einwohner2"), .e3 = xslTab1.Rows(i)("Einwohner3"), .e4 = xslTab1.Rows(i)("Einwohner4"), .e5 = xslTab1.Rows(i)("Einwohner5"), .e6 = xslTab1.Rows(i)("Einwohner6")}
             tab11 = New clsTab11(11) With {.resultat = xslTab1.Rows(i)("Resultat5")}
             tab12 = New clsTab12(12,, xslTab3.Select("Nr=" & xslTab1.Rows(i)("Nr")).ToList.CopyToDataTable)
+            tab13 = New clsTab13(13) With {.bemerkung = xslTab1.Rows(i)("Bemerkung6")}
             tab15 = New clsTab15(15) With {.resultat = xslTab1.Rows(i)("Ergebnis")}
-            tab17 = New clsTab17(17)
+            tab17 = New clsTab17(xslTab1.Rows(i)("Nr"))
 
-            tab1.anhang = tab1.ToString & "<br></br>" & tab2.ToString & "<br></br>" & tab3.ToString & tab4.ToString & tab5.ToString & tab6.ToString & tab7.ToString & tab8.ToString & tab9.ToString & tab10.ToString & tab11.ToString & tab12.ToString & tab13.ToString &
-            "<div style=""page-break-before: always;"">" & tab1.ToString & "</div>" & tab2.ToString & tab14.ToString & tab15.ToString & tab16.ToString & tab17.ToString & "<div style=""page-break-before: always;"">"
+            tab1.anhang = tab1.ToString & "<br></br>" & tab2.ToString & "<br></br>" & tab3.ToString & tab4.ToString & "<br></br>" & tab5.ToString & "<br></br>" & tab6.ToString & "<br></br>" & tab7.ToString & "<br></br>" & tab8.ToString & "<br></br>" & tab9.ToString & tab10.ToString & "<br></br>" & tab11.ToString & tab12.ToString & tab13.ToString &
+            "<div style=""page-break-before: always;"">" & tab1.ToString & "</div>" & tab14.ToString & tab15.ToString & "<br></br>" & tab16.ToString & tab17.ToString & "<div style=""page-break-before: always;"">"
 
             sb.Append(tab1.anhang)
 

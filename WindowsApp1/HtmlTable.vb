@@ -36,7 +36,7 @@ Public Class HtmlTable
                 'tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: gray;"">")
             Case 6
                 tableHtml.Append("<table border=""0"" style=""background-color: white; width: 100%; color: black;"">")
-            Case 7, 8, 9, 11, 13, 15
+            Case 7, 8, 9, 11, 13, 15, 17
                 tableHtml.Append("<table border=""0"" style=""background-color: white; width: 100%; color: black;"">")
             Case 10
                 tableHtml.Append("<table border=""0"" align=""center"" style=""background-color: white; width: 100%; color: black;"">")

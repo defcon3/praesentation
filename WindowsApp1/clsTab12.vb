@@ -34,10 +34,10 @@
         Dim summe1 As Double
 
         For Each rw In dt.Rows
-            row.AddCell(New HtmlTableCell(rw(0).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(0).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray),, "right"))
             row.AddCell(New HtmlTableCell(rw(1).ToString & "</br>" & rw(2).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(3).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(4).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(3).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray),, "right"))
+            row.AddCell(New HtmlTableCell(rw(4).ToString, IIf(z Mod 2 = 1, Color.White, Color.LightGray),, "right"))
             z += 1
             summe1 += rw(4)
             innertab.AddRow(row)
@@ -48,7 +48,7 @@
         row.AddCell(New HtmlTableCell(""))
         row.AddCell(New HtmlTableCell(""))
         row.AddCell(New HtmlTableCell(""))
-        row.AddCell(New HtmlTableCell(summe1.ToString))
+        row.AddCell(New HtmlTableCell(summe1.ToString,,, "right"))
         'row.AddCell(New HtmlTableCell("11.955"))
 
 

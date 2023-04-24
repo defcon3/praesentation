@@ -54,28 +54,19 @@
 <th width=""0%"" align=""center"" color=""white""></th>")
 
         For Each rw In dt.Rows
-            row.AddCell(New HtmlTableCell(rw(0).ToString, IIf(rw(0) Mod 2 = 1, Color.MistyRose, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(1).ToString, IIf(rw(0) Mod 2 = 1, Color.MistyRose, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(2).ToString, IIf(rw(0) Mod 2 = 1, Color.MistyRose, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(3).ToString, IIf(rw(0) Mod 2 = 1, Color.MistyRose, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(4).ToString, IIf(rw(0) Mod 2 = 1, Color.MistyRose, Color.LightGray)))
-            row.AddCell(New HtmlTableCell(rw(5).ToString, IIf(rw(0) Mod 2 = 1, Color.MistyRose, Color.LightGray)))
+            row.AddCell(New HtmlTableCell(rw(0).ToString, ,, "center"))
+            row.AddCell(New HtmlTableCell(rw(1).ToString, ,, "center"))
+            row.AddCell(New HtmlTableCell(rw(2).ToString, ,, "center"))
+            row.AddCell(New HtmlTableCell(rw(3).ToString, ,, "center"))
+            row.AddCell(New HtmlTableCell(rw(4).ToString, ,, "center"))
+            row.AddCell(New HtmlTableCell(rw(5).ToString, ,, "center"))
             'row.AddCell(New HtmlTableCell(rw(0).ToString, , Color.White))
             innertab.AddRow(row)
             row = New HtmlTableRow
         Next
 
-        'row.AddCell(New HtmlTableCell("    (EZB = Einzugsbereich",, Color.Gray))
-        'row.AddCell(New HtmlTableCell(""))
-        'row.AddCell(New HtmlTableCell(""))
-        'row.AddCell(New HtmlTableCell(""))
-        'row.AddCell(New HtmlTableCell("9.042"))
-        'row.AddCell(New HtmlTableCell("11.955"))
 
-
-        'innertab.AddRow(row)
-
-        tab = New HtmlTable(2, "<tr>" & innertab.ToHtml & "</tr>")
+        tab = New HtmlTable(10, "<tr>" & innertab.ToHtml & "</tr>")
 
 
 
