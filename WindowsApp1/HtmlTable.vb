@@ -7,6 +7,7 @@ Public Class HtmlTable
     Private _breitenstring As String
     Private _nummer As Integer
     Public anhang As String = ""
+    Private farbe As String
 
     Public Sub New(ByVal nr As Integer, Optional ByVal breiten As String = "")
         _breitenstring = breiten
@@ -27,11 +28,13 @@ Public Class HtmlTable
             Case 1
                 tableHtml.Append("<table border=""0"" style=""background-color: blue; width: 100%; color: white;"" font=""Arial, sans-serif"" size=""14"" color=""red"">")
             Case 2, 5, 14
-                tableHtml.Append("<table border=""0"" style=""background-color: white; width: 100%; color: gray;"">")
-            Case 3
+                'farbe = ColorTranslator.ToHtml(Color.Brown)
+                'tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: " & ColorTranslator.ToHtml(Color.Brown) & ";"" font=""Arial, sans-serif"" size=""26"">")
+                tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: " & ColorTranslator.ToHtml(Color.Yellow) & ";>")
+            Case 3, 4
                 tableHtml.Append("<table border=""0"" style=""background-color: white; width: 100%;"">")
-            Case 4
-                tableHtml.Append("<table border=""0"" style=""background-color: white; width: 100%;"">")
+                'Case 4
+                'tableHtml.Append("<table border=""0"" style=""background-color: white; width: 100%;"">")
                 'Case 5
                 'tableHtml.Append("<table border=""1"" style=""background-color: white; width: 100%; color: gray;"">")
             Case 6

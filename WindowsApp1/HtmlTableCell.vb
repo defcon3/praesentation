@@ -12,7 +12,7 @@
         _hAusrichtung = hAusrichtung
 
 
-        _rahmen = " style=""border: 1px solid black;"""
+        _rahmen = " style=""border: 2px solid black;"""
 
         If rahmen Then
             _hAusrichtung = _hAusrichtung & _rahmen
